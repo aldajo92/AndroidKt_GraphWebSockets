@@ -22,7 +22,9 @@ class MainViewModel : ViewModel() {
 
     fun initSocket() {
         try {
-            mSocket = IO.socket("https://e454-167-0-177-4.ngrok-free.app")
+            mSocket = IO.socket(
+                "https://f47b-167-0-177-4.ngrok-free.app" // <- Replace with your ngrok url
+            )
         } catch (e: URISyntaxException) {
             Log.e("MainViewModel", "Error: $e")
         }

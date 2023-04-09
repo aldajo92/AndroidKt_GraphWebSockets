@@ -3,11 +3,11 @@
 ## Running on Windows (Temporal solution) ##
 - First build the container:
 ```
-docker build -t node_project_container .
+docker build -t nodejs_socket_container .
 ```
 - Then, run it:
 ```
-docker run -it -p 3000:3000 --volume ${PWD}/app:/app --name=node_project_container --rm node_project_container
+docker run -it -p 3000:3000 --volume ${PWD}/app:/app --name=nodejs_socket_container --rm nodejs_socket_container
 ```
 
 ## Running on Linux/Mac
